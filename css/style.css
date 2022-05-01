@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+.nav-link li a{
+    text-decoration: none;
+    color: rgb(1, 14, 9);
+    margin: 15px;
+    font-weight: 700;
+}
+
+header{
+    background-color: rgb(35, 43, 122);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    margin-left: 10px;
+    font-weight: 900;
+    font-size: 40px;
+    font-family: cursive ;
+    color: rgb(97, 153, 8);
+    cursor: pointer;
+}
+.nav-link li {
+    list-style: none;
+    display: inline-block;
+    font-size: 20px; 
+    color: brown;
+    
+}
+.nav-link li a:hover{
+    color: rgb(228, 42, 42) ;
+    transition: 1s;
+    
+}
+
+

@@ -1,41 +1,117 @@
 *{
     margin: 0;
     padding: 0;
-   
 }
-.nav-link li a{
-    text-decoration: none;
-    color: rgb(1, 14, 9);
-    margin: 15px;
-    font-weight: 700;
-}
-
-header{
-    background-color: rgb(35, 43, 122);
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+body{
+    background-image:url("../image/daniil-silantev-cKT2WBaIXVU-unsplash.jpg");
+    background-size: 160%;
+    background-repeat: no-repeat;
+    background: transparen;
+    
+    
+    
 }
 .logo{
-    margin-left: 10px;
-    font-weight: 900;
-    font-size: 40px;
-    font-family: cursive ;
-    color: rgb(97, 153, 8);
-    cursor: pointer;
+     font-family: sans-serif;
+     font-weight: 900;
+     font-size: 40px;
+     margin-left: 30px;
+     cursor: pointer;
+     color: rgb(255, 0, 0);
 }
-.nav-link li {
-    list-style: none;
-    display: inline-block;
-    font-size: 20px; 
-    color: brown;
+a,p{
+    text-decoration:none;
+    color: black;
+}
+header{
+    height: 70px;
+    display: flex;
+  
+    justify-content: space-between;
     
+}
+.nav-link li{
+    list-style: none;
+    display: inline block;
+    
+    width: 100px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    float: left;
+    margin-right: 50px;
+   
+
+}  
+
+
+
+.nav-link li ul li{
+    margin-right: 60%;
+}
+
+
+
+.nav-link li ul{
+    display: none
+}
+.nav-link li ul li{
+    width: 200%;
+
+}
+.nav-link li ul li ul li{
+    width: 300%;
+}
+.nav-link li:hover > ul{
+    display: block;
 }
 .nav-link li a:hover{
-    color: rgb(228, 42, 42) ;
-    transition: 1s;
+    color: rgb(255, 2, 2);
+    transition: 5s;
+    
     
 }
 
+.nav-link li ul li{
+    position: relative;
+}
 
+.nav-link li ul li ul{
+    position: absolute;
+    top: 0px;
+    left: 150px;
+}
+.search-link{
+    width: 300px;
+    height: 40px;
+    border: 2px solid red;
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    backdrop-filter: blur(40px) saturate(180%);
+}
+.search-link input{
+    background: transparent;
+    border: 10px;
+    padding: 10px 20px;
+    margin-top: 3px;
+    flex: 1;
+    outline: none;
+    cursor: pointer;
+ 
+}
+.search-link button img{
+    width: 20px;
+}
+.search-link button{
+    border: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    cursor: pointer;
+    float: right;
+    margin-right: 20px;
+    
+
+}
